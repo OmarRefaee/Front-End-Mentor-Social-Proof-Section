@@ -1,0 +1,21 @@
+@use "./../Helpers/global" as *;
+@use "./../Helpers/variables" as *;
+@use "./../Helpers/mixins" as *;
+
+footer {
+    @include position(relative, bottom);
+    color: grey;
+    font-weight: bold;
+    width: 100%;
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: rgb(50, 50, 50);
+            &:hover {
+                color: rgba(50, 50, 50, 0.5);
+            }
+        }
+    }
+}
